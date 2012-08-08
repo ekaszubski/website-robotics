@@ -1,0 +1,19 @@
+div.section
+{
+  padding-top: 60px;
+}
+
+div.subsection
+{
+  padding-top: 5px;
+}
+
+div.subsection p
+{
+  text-indent: 0px;
+}
+
+div.subsection li p
+{
+  text-indent: 0px;
+}
