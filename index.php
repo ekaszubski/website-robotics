@@ -41,6 +41,8 @@ include_once 'php/content/personal_side_post.php';
 include_once 'php/content/projects_side_post.php';
 include_once 'php/content/research_side_post.php';
 
+global $TAB;
+
 $page_gen = new PageGenerator( 'Home' );
 
 $top_nav = &$page_gen->getBody()->getHeader();
