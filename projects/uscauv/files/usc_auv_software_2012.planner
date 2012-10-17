@@ -1,0 +1,576 @@
+<?xml version="1.0"?>
+<project name="USC AUV - Software 2012" company="" manager="" phase="" project-start="20121021T000000Z" mrproject-version="2" calendar="1">
+  <properties/>
+  <phases/>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="Working" description="A default working day"/>
+      <day-type id="1" name="Nonworking" description="A default non working day"/>
+      <day-type id="2" name="Use base" description="Use day from base calendar"/>
+    </day-types>
+    <calendar id="1" name="Default">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days/>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="Lvl 1" note="" work="1670400" start="20121021T000000Z" end="20121218T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="2" name="depth_calibration" note="" work="288000" start="20121021T000000Z" end="20121102T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="3" name="design" note="" work="28800" start="20121021T000000Z" end="20121022T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="4" name="implement" note="" work="115200" start="20121022T170000Z" end="20121026T170000Z" work-start="20121023T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="3" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="5" name="test" note="" work="144000" start="20121026T170000Z" end="20121102T170000Z" work-start="20121029T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="4" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="6" name="unit color_calibration" note="" work="432000" start="20121021T000000Z" end="20121109T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="7" name="design" note="" work="144000" start="20121021T000000Z" end="20121026T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="8" name="implement" note="" work="144000" start="20121026T170000Z" end="20121102T170000Z" work-start="20121029T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="7" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="9" name="test" note="" work="144000" start="20121102T170000Z" end="20121109T170000Z" work-start="20121105T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="8" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="10" name="camera_calibration" note="" work="57600" start="20121021T000000Z" end="20121023T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="11" name="test with hybrid target" note="" work="57600" start="20121021T000000Z" end="20121023T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      </task>
+      <task id="12" name="hybrid_calibration" note="" work="432000" start="20121109T170000Z" end="20121130T170000Z" work-start="20121112T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="10" type="FS"/>
+          <predecessor id="1" predecessor-id="6" type="FS"/>
+        </predecessors>
+        <task id="13" name="design" note="" work="144000" start="20121109T170000Z" end="20121116T170000Z" work-start="20121112T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="14" name="implement" note="" work="144000" start="20121116T170000Z" end="20121123T170000Z" work-start="20121119T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="13" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="15" name="test" note="" work="144000" start="20121123T170000Z" end="20121130T170000Z" work-start="20121126T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="14" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="16" name="build hybrid calibration target" note="" work="460800" start="20121021T000000Z" end="20121218T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="17" name="determine optimal size" note="" work="57600" start="20121130T170000Z" end="20121204T170000Z" work-start="20121203T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="12" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="18" name="get parts" note="" work="57600" start="20121204T170000Z" end="20121206T170000Z" work-start="20121205T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="17" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="19" name="assemble frame" note="" work="28800" start="20121206T170000Z" end="20121207T170000Z" work-start="20121207T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="18" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="20" name="determine optimal print/lamination media" note="" work="115200" start="20121021T000000Z" end="20121025T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="21" name="print" note="" work="57600" start="20121207T170000Z" end="20121211T170000Z" work-start="20121210T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="19" type="FS"/>
+            <predecessor id="1" predecessor-id="20" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="22" name="test" note="" work="144000" start="20121211T170000Z" end="20121218T170000Z" work-start="20121212T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="21" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+    </task>
+    <task id="23" name="Lvl 2" note="" work="1987200" start="20121021T000000Z" end="20121109T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="24" name="xsens_driver" note="" work="432000" start="20121021T000000Z" end="20121102T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="25" name="simulation" note="" work="144000" start="20121021T000000Z" end="20121026T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="26" name="analyze drift properties" note="" work="144000" start="20121021T000000Z" end="20121026T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="27" name="implement calibration" note="" work="144000" start="20121026T170000Z" end="20121102T170000Z" work-start="20121029T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="26" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="28" name="seabee_driver" note="" work="633600" start="20121021T000000Z" end="20121102T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="29" name="simulation" note="" work="57600" start="20121021T000000Z" end="20121023T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="30" name="set motor values" note="" work="144000" start="20121021T000000Z" end="20121026T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="31" name="read pressure, kill switch" note="" work="144000" start="20121021T000000Z" end="20121026T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="32" name="display" note="" work="288000" start="20121021T000000Z" end="20121102T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      </task>
+      <task id="33" name="sonar_driver" note="" work="489600" start="20121021T000000Z" end="20121102T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="34" name="simulation" note="" work="57600" start="20121021T000000Z" end="20121023T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="35" name="read data" note="" work="144000" start="20121021T000000Z" end="20121026T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="36" name="fft/other analysis" note="" work="144000" start="20121021T000000Z" end="20121026T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="37" name="test" note="" work="144000" start="20121026T170000Z" end="20121102T170000Z" work-start="20121029T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="35" type="FS"/>
+            <predecessor id="1" predecessor-id="36" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="38" name="color_classifier" note="" work="432000" start="20121021T000000Z" end="20121109T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="39" name="re-evaluate functionality" note="" work="144000" start="20121021T000000Z" end="20121026T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="40" name="update functionality" note="" work="144000" start="20121026T170000Z" end="20121102T170000Z" work-start="20121029T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="39" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="41" name="test" note="" work="144000" start="20121102T170000Z" end="20121109T170000Z" work-start="20121105T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="40" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+    </task>
+    <task id="42" name="Lvl 3" note="" work="1267200" start="20121021T000000Z" end="20121116T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="43" name="seabee3_physics" note="" work="1008000" start="20121021T000000Z" end="20121116T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="44" name="update drag" note="" work="144000" start="20121021T000000Z" end="20121026T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="45" name="evaluate feasibility of force sensor input" note="" work="288000" start="20121021T000000Z" end="20121102T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="46" name="evaluate feasibility of flow rate model" note="" work="288000" start="20121021T000000Z" end="20121102T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="47" name="implement desired model" note="" work="144000" start="20121102T170000Z" end="20121109T170000Z" work-start="20121105T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="45" type="FS"/>
+            <predecessor id="1" predecessor-id="46" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="48" name="test" note="" work="144000" start="20121109T170000Z" end="20121116T170000Z" work-start="20121112T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="47" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="49" name="contour_finder" note="" work="115200" start="20121021T000000Z" end="20121025T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="50" name="re-evaluate functionality" note="" work="28800" start="20121021T000000Z" end="20121022T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="51" name="update functionality" note="" work="57600" start="20121022T170000Z" end="20121024T170000Z" work-start="20121023T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="50" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="52" name="test" note="" work="28800" start="20121024T170000Z" end="20121025T170000Z" work-start="20121025T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="51" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="53" name="landmark defs" note="" work="144000" start="20121021T000000Z" end="20121026T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="54" name="design" note="" work="57600" start="20121021T000000Z" end="20121023T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="55" name="implement" note="" work="86400" start="20121023T170000Z" end="20121026T170000Z" work-start="20121024T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="54" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+    </task>
+    <task id="56" name="Lvl 4" note="" work="1152000" start="20121021T000000Z" end="20121123T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="57" name="simulated_odometry" note="" work="432000" start="20121021T000000Z" end="20121123T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="58" name="design" note="" work="57600" start="20121021T000000Z" end="20121023T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="59" name="implement" note="" work="86400" start="20121023T170000Z" end="20121026T170000Z" work-start="20121024T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="58" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="60" name="test IMU-derived position/velocity" note="" work="144000" start="20121102T170000Z" end="20121109T170000Z" work-start="20121105T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="24" type="FS"/>
+            <predecessor id="1" predecessor-id="59" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="61" name="test IMU/physics data fusion" note="" work="144000" start="20121116T170000Z" end="20121123T170000Z" work-start="20121119T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="43" type="FS"/>
+            <predecessor id="1" predecessor-id="59" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="62" name="contour_matcher" note="" work="432000" start="20121021T000000Z" end="20121109T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="63" name="design" note="" work="144000" start="20121021T000000Z" end="20121026T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="64" name="implement" note="" work="144000" start="20121026T170000Z" end="20121102T170000Z" work-start="20121029T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="63" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="65" name="test" note="" work="144000" start="20121102T170000Z" end="20121109T170000Z" work-start="20121105T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="64" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="66" name="landmark defs" note="" work="288000" start="20121021T000000Z" end="20121102T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="67" name="design" note="" work="144000" start="20121021T000000Z" end="20121026T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="68" name="implement" note="" work="144000" start="20121026T170000Z" end="20121102T170000Z" work-start="20121029T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="67" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+    </task>
+    <task id="69" name="Lvl 5" note="" work="864000" start="20121021T000000Z" end="20121130T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="70" name="particle_filter" note="" work="576000" start="20121021T000000Z" end="20121130T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="71" name="design" note="" work="144000" start="20121021T000000Z" end="20121026T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="72" name="implement" note="" work="288000" start="20121026T170000Z" end="20121109T170000Z" work-start="20121029T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="71" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="73" name="test" note="" work="144000" start="20121123T170000Z" end="20121130T170000Z" work-start="20121126T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="72" type="FS"/>
+            <predecessor id="1" predecessor-id="57" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="74" name="landmark recognition api" note="" work="288000" start="20121102T170000Z" end="20121116T170000Z" work-start="20121105T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="75" name="implement" note="" work="144000" start="20121109T170000Z" end="20121116T170000Z" work-start="20121112T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="76" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="76" name="design" note="" work="144000" start="20121102T170000Z" end="20121109T170000Z" work-start="20121105T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="66" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+    </task>
+    <task id="77" name="Lvl 6" note="" work="5184000" start="20121021T000000Z" end="20121228T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="78" name="seabee3_localization" note="" work="432000" start="20121021T000000Z" end="20121109T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="79" name="design" note="" work="144000" start="20121021T000000Z" end="20121026T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="80" name="implement" note="" work="144000" start="20121026T170000Z" end="20121102T170000Z" work-start="20121029T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="79" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="81" name="test" note="" work="144000" start="20121102T170000Z" end="20121109T170000Z" work-start="20121105T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="80" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="82" name="landmark recognizers" note="" work="4752000" start="20121021T000000Z" end="20121228T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="83" name="gate_recognizer" note="" work="576000" start="20121021T000000Z" end="20121207T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="84" name="design" note="" work="144000" start="20121021T000000Z" end="20121026T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="85" name="implement" note="" work="144000" start="20121116T170000Z" end="20121123T170000Z" work-start="20121119T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="74" type="FS"/>
+              <predecessor id="1" predecessor-id="84" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="86" name="test" note="" work="288000" start="20121123T170000Z" end="20121207T170000Z" work-start="20121126T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="85" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="87" name="pipe_recognizer" note="" work="576000" start="20121021T000000Z" end="20121207T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="88" name="design" note="" work="144000" start="20121021T000000Z" end="20121026T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="89" name="implement" note="" work="144000" start="20121116T170000Z" end="20121123T170000Z" work-start="20121119T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="74" type="FS"/>
+              <predecessor id="1" predecessor-id="88" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="90" name="test" note="" work="288000" start="20121123T170000Z" end="20121207T170000Z" work-start="20121126T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="89" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="91" name="buoy_recognizer" note="" work="576000" start="20121021T000000Z" end="20121207T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="92" name="design" note="" work="144000" start="20121021T000000Z" end="20121026T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="93" name="implement" note="" work="144000" start="20121116T170000Z" end="20121123T170000Z" work-start="20121119T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="74" type="FS"/>
+              <predecessor id="1" predecessor-id="92" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="94" name="test" note="" work="288000" start="20121123T170000Z" end="20121207T170000Z" work-start="20121126T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="93" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="95" name="hedge_recognizer" note="" work="576000" start="20121021T000000Z" end="20121207T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="96" name="design" note="" work="144000" start="20121021T000000Z" end="20121026T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="97" name="implement" note="" work="144000" start="20121116T170000Z" end="20121123T170000Z" work-start="20121119T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="74" type="FS"/>
+              <predecessor id="1" predecessor-id="96" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="98" name="test" note="" work="288000" start="20121123T170000Z" end="20121207T170000Z" work-start="20121126T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="97" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="99" name="window_recognizer" note="" work="576000" start="20121021T000000Z" end="20121207T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="100" name="design" note="" work="144000" start="20121021T000000Z" end="20121026T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="101" name="implement" note="" work="144000" start="20121116T170000Z" end="20121123T170000Z" work-start="20121119T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="74" type="FS"/>
+              <predecessor id="1" predecessor-id="100" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="102" name="test" note="" work="288000" start="20121123T170000Z" end="20121207T170000Z" work-start="20121126T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="101" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="103" name="bin_recognizer" note="" work="720000" start="20121021T000000Z" end="20121207T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="104" name="design" note="" work="288000" start="20121021T000000Z" end="20121102T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="105" name="implement" note="" work="144000" start="20121116T170000Z" end="20121123T170000Z" work-start="20121119T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="74" type="FS"/>
+              <predecessor id="1" predecessor-id="104" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="106" name="test" note="" work="288000" start="20121123T170000Z" end="20121207T170000Z" work-start="20121126T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="105" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="107" name="pinger_recognizer" note="" work="432000" start="20121102T170000Z" end="20121123T170000Z" work-start="20121105T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="33" type="FS"/>
+          </predecessors>
+          <task id="108" name="design" note="" work="57600" start="20121102T170000Z" end="20121106T170000Z" work-start="20121105T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="109" name="implement" note="" work="86400" start="20121106T170000Z" end="20121109T170000Z" work-start="20121107T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="108" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="110" name="test" note="" work="288000" start="20121109T170000Z" end="20121123T170000Z" work-start="20121112T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="109" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="111" name="octagon_recognizer" note="" work="720000" start="20121123T170000Z" end="20121228T170000Z" work-start="20121126T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="107" type="FS"/>
+          </predecessors>
+          <task id="112" name="design" note="" work="288000" start="20121123T170000Z" end="20121207T170000Z" work-start="20121126T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="113" name="implement" note="" work="144000" start="20121207T170000Z" end="20121214T170000Z" work-start="20121210T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="74" type="FS"/>
+              <predecessor id="1" predecessor-id="112" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="114" name="test" note="" work="288000" start="20121214T170000Z" end="20121228T170000Z" work-start="20121217T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="113" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+      </task>
+    </task>
+    <task id="115" name="Lvl 7" note="" work="864000" start="20121021T000000Z" end="20121102T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="116" name="seabee3_controls" note="" work="288000" start="20121021T000000Z" end="20121102T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="117" name="design" note="" work="57600" start="20121021T000000Z" end="20121023T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="118" name="implement" note="" work="86400" start="20121023T170000Z" end="20121026T170000Z" work-start="20121024T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="117" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="119" name="test" note="" work="144000" start="20121026T170000Z" end="20121102T170000Z" work-start="20121029T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="118" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="120" name="trajectory planning API" note="" work="288000" start="20121021T000000Z" end="20121102T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="121" name="design" note="" work="144000" start="20121021T000000Z" end="20121026T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="122" name="implement" note="" work="144000" start="20121026T170000Z" end="20121102T170000Z" work-start="20121029T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="121" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="123" name="landmark_map_server" note="" work="288000" start="20121021T000000Z" end="20121102T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="124" name="design" note="" work="57600" start="20121021T000000Z" end="20121023T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="125" name="implement" note="" work="86400" start="20121023T170000Z" end="20121026T170000Z" work-start="20121024T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="124" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="126" name="test" note="" work="144000" start="20121026T170000Z" end="20121102T170000Z" work-start="20121029T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="125" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+    </task>
+    <task id="127" name="Lvl 8" note="" work="1440000" start="20121021T000000Z" end="20121123T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="128" name="trajectory planners" note="" work="1008000" start="20121021T000000Z" end="20121123T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="129" name="linear_trajectory_planner" note="" work="432000" start="20121021T000000Z" end="20121123T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="130" name="design" note="" work="144000" start="20121021T000000Z" end="20121026T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="131" name="implement" note="" work="144000" start="20121026T170000Z" end="20121102T170000Z" work-start="20121029T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="130" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="132" name="test" note="" work="144000" start="20121116T170000Z" end="20121123T170000Z" work-start="20121119T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="43" type="FS"/>
+              <predecessor id="1" predecessor-id="131" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="133" name="spline_trajectory_planner" note="" work="576000" start="20121021T000000Z" end="20121123T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="134" name="design" note="" work="288000" start="20121021T000000Z" end="20121102T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="135" name="implement" note="" work="144000" start="20121102T170000Z" end="20121109T170000Z" work-start="20121105T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="134" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="136" name="test" note="" work="144000" start="20121116T170000Z" end="20121123T170000Z" work-start="20121119T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="43" type="FS"/>
+              <predecessor id="1" predecessor-id="135" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+      </task>
+      <task id="137" name="trajectory_follower" note="" work="432000" start="20121021T000000Z" end="20121116T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="138" name="design" note="" work="144000" start="20121021T000000Z" end="20121026T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="139" name="implement" note="" work="144000" start="20121026T170000Z" end="20121102T170000Z" work-start="20121029T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="138" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="140" name="test" note="" work="144000" start="20121109T170000Z" end="20121116T170000Z" work-start="20121112T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="78" type="FS"/>
+            <predecessor id="1" predecessor-id="139" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+    </task>
+    <task id="141" name="Lvl 9" note="" work="1152000" start="20121021T000000Z" end="20121130T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="142" name="motion api" note="" work="288000" start="20121021T000000Z" end="20121102T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="143" name="design" note="" work="144000" start="20121021T000000Z" end="20121026T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="144" name="implement" note="" work="144000" start="20121026T170000Z" end="20121102T170000Z" work-start="20121029T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="143" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="145" name="control_script_interpreter" note="" work="864000" start="20121021T000000Z" end="20121130T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="146" name="design" note="" work="288000" start="20121021T000000Z" end="20121102T170000Z" work-start="20121022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="147" name="implement" note="" work="288000" start="20121102T170000Z" end="20121116T170000Z" work-start="20121105T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="142" type="FS"/>
+            <predecessor id="1" predecessor-id="146" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="148" name="test" note="" work="288000" start="20121116T170000Z" end="20121130T170000Z" work-start="20121119T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="147" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+    </task>
+    <task id="149" name="Lvl 10" note="" work="4608000" start="20121130T170000Z" end="20121228T170000Z" work-start="20121203T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="150" name="competition controllers" note="" work="4608000" start="20121130T170000Z" end="20121228T170000Z" work-start="20121203T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="145" type="FS"/>
+        </predecessors>
+        <task id="151" name="gate_controller" note="" work="576000" start="20121130T170000Z" end="20121228T170000Z" work-start="20121203T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="152" name="design/implement" note="" work="288000" start="20121130T170000Z" end="20121214T170000Z" work-start="20121203T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="153" name="test" note="" work="288000" start="20121214T170000Z" end="20121228T170000Z" work-start="20121217T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="152" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="154" name="pipe_controller" note="" work="576000" start="20121130T170000Z" end="20121228T170000Z" work-start="20121203T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="155" name="design/implement" note="" work="288000" start="20121130T170000Z" end="20121214T170000Z" work-start="20121203T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="156" name="test" note="" work="288000" start="20121214T170000Z" end="20121228T170000Z" work-start="20121217T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="155" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="157" name="buoy_controller" note="" work="576000" start="20121130T170000Z" end="20121228T170000Z" work-start="20121203T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="158" name="design/implement" note="" work="288000" start="20121130T170000Z" end="20121214T170000Z" work-start="20121203T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="159" name="test" note="" work="288000" start="20121214T170000Z" end="20121228T170000Z" work-start="20121217T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="158" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="160" name="hedge_controller" note="" work="576000" start="20121130T170000Z" end="20121228T170000Z" work-start="20121203T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="161" name="design/implement" note="" work="288000" start="20121130T170000Z" end="20121214T170000Z" work-start="20121203T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="162" name="test" note="" work="288000" start="20121214T170000Z" end="20121228T170000Z" work-start="20121217T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="161" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="163" name="window_controller" note="" work="576000" start="20121130T170000Z" end="20121228T170000Z" work-start="20121203T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="164" name="design/implement" note="" work="288000" start="20121130T170000Z" end="20121214T170000Z" work-start="20121203T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="165" name="test" note="" work="288000" start="20121214T170000Z" end="20121228T170000Z" work-start="20121217T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="164" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="166" name="bin_controller" note="" work="576000" start="20121130T170000Z" end="20121228T170000Z" work-start="20121203T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="167" name="design/implement" note="" work="288000" start="20121130T170000Z" end="20121214T170000Z" work-start="20121203T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="168" name="test" note="" work="288000" start="20121214T170000Z" end="20121228T170000Z" work-start="20121217T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="167" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="169" name="pinger_controller" note="" work="576000" start="20121130T170000Z" end="20121228T170000Z" work-start="20121203T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="170" name="design/implement" note="" work="288000" start="20121130T170000Z" end="20121214T170000Z" work-start="20121203T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="171" name="test" note="" work="288000" start="20121214T170000Z" end="20121228T170000Z" work-start="20121217T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="170" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="172" name="octagon_controller" note="" work="576000" start="20121130T170000Z" end="20121228T170000Z" work-start="20121203T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="173" name="design/implement" note="" work="288000" start="20121130T170000Z" end="20121214T170000Z" work-start="20121203T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="174" name="test" note="" work="288000" start="20121214T170000Z" end="20121228T170000Z" work-start="20121217T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="173" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+      </task>
+    </task>
+  </tasks>
+  <resource-groups/>
+  <resources>
+    <resource id="1" name="William Leong" short-name="" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="2" name="Samir Lavingia" short-name="" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="3" name="Jefferson Luu" short-name="" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="4" name="Garland Chen" short-name="" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="5" name="Douglass Chen" short-name="" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="6" name="Dhruv" short-name="" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="7" name="Mike Gerow" short-name="" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="8" name="Kathryn Yu" short-name="" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="9" name="Edward T. Kaszubski" short-name="" type="1" units="0" email="" note="" std-rate="0"/>
+  </resources>
+  <allocations/>
+</project>
